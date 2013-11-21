@@ -1,0 +1,145 @@
+﻿
+html, body {
+   /* height: 100%;fk dis shiieett!!!
+    min-width: 100%;
+    position: absolute;*/
+}
+.wrapper {
+    min-height: 100%;
+    position: relative;
+}
+.wrapper + style + iframe {
+    display: none;
+}
+.content {
+    padding: 0 44px;
+}
+.google-header-bar {
+    background: none repeat scroll 0 0 #F1F1F1;
+    border-bottom: 1px solid #E5E5E5;
+    height: 71px;
+    overflow: hidden;
+}
+.header .logo {
+    float: left;
+    margin: 17px 0 0;
+}
+.header .signin, .header .signup {
+    float: right;
+    font-weight: bold;
+    margin: 28px 0 0;
+}
+.header .signin-button, .header .signup-button {
+    float: right;
+    margin: 22px 0 0;
+}
+.header .signin-button a {
+    font-size: 13px;
+    font-weight: normal;
+}
+.header .signup-button a {
+    margin: 0 0 0 1em;
+    position: relative;
+    top: -1px;
+}
+.main {
+    /*margin: 0 auto; set the following code to get it aligned in center*/ 
+    margin:0;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    width: 800px;
+}
+.main h1:first-child {
+    margin: 0.92em 0 0.92em;
+}
+.google-footer-bar {
+    border-top: 1px solid #EBEBEB;
+    bottom: 0;
+    height: 35px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+.footer {
+    font-size: 0.85em;
+    line-height: 0;
+    padding-top: 9px;
+    white-space: nowrap;
+}
+.footer ul {
+    color: #999999;
+    float: left;
+    max-width: 80%;
+}
+.footer ul li {
+    display: inline;
+    padding: 0 1.5em 0 0;
+}
+.footer a {
+    color: #333333;
+}
+.footer form {
+    text-align: right;
+}
+.footer form .lang-chooser {
+    max-width: 20%;
+}
+.redtext {
+    color: #DD4B39;
+}
+.greytext {
+    color: #555555;
+}
+.secondary {
+    color: #666666;
+    font-size: 11px;
+}
+.source {
+    color: #009933;
+}
+.hidden {
+    display: none;
+}
+.announce-bar {
+    background: none repeat scroll 0 0 #F9EDBE;
+    border-bottom: 1px solid #EFE1AC;
+    border-top: 1px solid #EFE1AC;
+    bottom: 35px;
+    height: 33px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+.announce-bar .message {
+    font-size: 0.85em;
+    line-height: 33px;
+    margin: 0;
+}
+.announce-bar .message .separated {
+    margin-left: 1.5em;
+}
+.announce-bar-ac {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-bottom: 1px solid #E5E5E5;
+    border-top: 1px solid #E5E5E5;
+}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+* html .clearfix 
+{
+    width:900px;
+}
+:first-child + html .clearfix {
+}
+
+.lol
+{
+    border-radius:5px 5px 5px 5px;
+}
