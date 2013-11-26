@@ -13,5 +13,15 @@ namespace FKMANO
         {
 
         }
+
+        protected void BtnGuardar_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        protected void BtnCancelar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

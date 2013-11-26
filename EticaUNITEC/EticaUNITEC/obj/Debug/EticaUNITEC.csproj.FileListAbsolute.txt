@@ -32,3 +32,11 @@ C:\Users\Nahúm Fabián\Documents\Etica Unitec\EticaUNITEC\EticaUNITEC\bin\Ext.N
 C:\Users\Nahúm Fabián\Documents\Etica Unitec\EticaUNITEC\EticaUNITEC\obj\Debug\EticaUNITEC.dll.licenses
 C:\Users\Nahúm Fabián\Documents\Etica Unitec\EticaUNITEC\EticaUNITEC\obj\Debug\EticaUNITEC.dll
 C:\Users\Nahúm Fabián\Documents\Etica Unitec\EticaUNITEC\EticaUNITEC\obj\Debug\EticaUNITEC.pdb
+C:\Users\Nahúm Fabián\Documents\EticaUnitec\EticaUNITEC\EticaUNITEC\bin\EticaUNITEC.dll
+C:\Users\Nahúm Fabián\Documents\EticaUnitec\EticaUNITEC\EticaUNITEC\bin\EticaUNITEC.pdb
+C:\Users\Nahúm Fabián\Documents\EticaUnitec\EticaUNITEC\EticaUNITEC\bin\Newtonsoft.Json.dll
+C:\Users\Nahúm Fabián\Documents\EticaUnitec\EticaUNITEC\EticaUNITEC\bin\Ext.Net.Utilities.dll
+C:\Users\Nahúm Fabián\Documents\EticaUnitec\EticaUNITEC\EticaUNITEC\obj\Debug\EticaUNITEC.csprojResolveAssemblyReference.cache
+C:\Users\Nahúm Fabián\Documents\EticaUnitec\EticaUNITEC\EticaUNITEC\obj\Debug\EticaUNITEC.dll.licenses
+C:\Users\Nahúm Fabián\Documents\EticaUnitec\EticaUNITEC\EticaUNITEC\obj\Debug\EticaUNITEC.dll
+C:\Users\Nahúm Fabián\Documents\EticaUnitec\EticaUNITEC\EticaUNITEC\obj\Debug\EticaUNITEC.pdb
