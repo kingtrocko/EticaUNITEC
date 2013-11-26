@@ -20,6 +20,10 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -371,7 +375,6 @@
     <Content Include="Seguridad\Error.aspx" />
     <Content Include="Seguridad\Login.aspx" />
     <Content Include="Seguridad\Logout.aspx" />
-    <Content Include="Seguridad\malea.aspx" />
     <Content Include="Seguridad\ListaRoles.aspx" />
     <Content Include="Seguridad\MantenimientoRoles.aspx" />
     <Content Include="Seguridad\ModificarRegistro.aspx" />
@@ -575,13 +578,6 @@
     </Compile>
     <Compile Include="Seguridad\Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Seguridad\malea.aspx.cs">
-      <DependentUpon>malea.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Seguridad\malea.aspx.designer.cs">
-      <DependentUpon>malea.aspx</DependentUpon>
     </Compile>
     <Compile Include="Seguridad\ListaRoles.aspx.cs">
       <DependentUpon>ListaRoles.aspx</DependentUpon>
