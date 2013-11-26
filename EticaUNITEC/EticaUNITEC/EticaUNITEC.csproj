@@ -333,13 +333,17 @@
     <Content Include="Reporte\ReporteAlumnos.aspx" />
     <Content Include="Reporte\ReportePorCarrera.aspx" />
     <Content Include="Resources\arrow-b.png" />
+    <Content Include="Resources\arrow-up-down.png" />
     <Content Include="Resources\arrow-w.png" />
     <Content Include="Resources\arrow_left.png" />
     <Content Include="Resources\arrow_left_h.png" />
     <Content Include="Resources\arrow_right.png" />
     <Content Include="Resources\arrow_right_h.png" />
     <Content Include="Resources\bg15x15.png" />
+    <Content Include="Resources\icon_error.png" />
+    <Content Include="Resources\jquery.min.js" />
     <Content Include="Resources\logo_header.png" />
+    <Content Include="Resources\nLogou.png" />
     <Content Include="Resources\sep.png" />
     <Content Include="Resources\unitec.ico" />
     <Content Include="Scripts\2012.2.607\jquery-1.7.1.min.js" />

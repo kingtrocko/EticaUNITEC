@@ -5,4 +5,3 @@ C:\Users\Nahúm Fabián\Documents\EticaUnitec\EticaUNITEC\EticaUNITEC\bin\Ext.Ne
 C:\Users\Nahúm Fabián\Documents\EticaUnitec\EticaUNITEC\EticaUNITEC\obj\Release\EticaUNITEC.dll.licenses
 C:\Users\Nahúm Fabián\Documents\EticaUnitec\EticaUNITEC\EticaUNITEC\obj\Release\EticaUNITEC.dll
 C:\Users\Nahúm Fabián\Documents\EticaUnitec\EticaUNITEC\EticaUNITEC\obj\Release\EticaUNITEC.pdb
-C:\Users\Nahúm Fabián\Documents\EticaUnitec\EticaUNITEC\EticaUNITEC\obj\Release\EticaUNITEC.csprojResolveAssemblyReference.cache
