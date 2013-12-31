@@ -168,8 +168,12 @@
                         <asp:HyperLinkField HeaderImageUrl="~/Faltas/Imprimir.aspx" Text="Imprimir" />
                         <asp:TemplateField ShowHeader="False">
                         <ItemTemplate>
-                            <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" 
-                                CommandName="Edit" Text="Editar"></asp:LinkButton>
+                            <asp:HyperLink ID="HyperLink2" runat="server" 
+                                NavigateUrl='<%# "MantenimientoFaltas.aspx?id=" + Eval("FaltaId")  %>' 
+                                Text="Editar">Editar</asp:HyperLink>
+
+                            <%--<asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" 
+                                CommandName="Edit" Text="Editar"></asp:LinkButton>--%>
                             
                         </ItemTemplate>
                             <EditItemTemplate>

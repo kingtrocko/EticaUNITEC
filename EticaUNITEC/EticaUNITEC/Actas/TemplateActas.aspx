@@ -48,8 +48,8 @@
                                     <label class="column2" style="width:30%;">
                                             <strong>Categoria</strong>
                                             <div class="goog-inline-block goog-flat-menu-button jfk-select styled-select">
-                                                <asp:DropDownList ID="cmbCategoria" runat="server">
-                                                </asp:DropDownList>
+                                                <asp:DropDownList AutoPostBack="False" ID="cmbCategoria" runat="server">
+                                                        </asp:DropDownList>
                                             </div>
                                     </label>
                                 </fieldset>

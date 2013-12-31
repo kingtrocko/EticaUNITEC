@@ -33,7 +33,7 @@ namespace EticaUNITEC.Seguridad
             try
             {
                 string sql = @"SELECT *
-                               FROM InformacionTemplates";
+                               FROM Templates"; //InformacionTemplates
 
                 SqlCommand cmd = new SqlCommand(sql, con);
                 SqlDataReader reader = cmd.ExecuteReader();

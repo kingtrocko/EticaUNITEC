@@ -41,7 +41,6 @@
                 <asp:BoundField DataField="TemplateHTML" HeaderText="TemplateHTML" />
                 <asp:BoundField DataField="TemplateDescripcion" HeaderText="Descripcion" />
                 <asp:BoundField DataField="CategoriaId" HeaderText="CategoriaId" />
-                <asp:BoundField DataField="CategoriaNombre" HeaderText="Categoria" />
                 <asp:TemplateField ShowHeader="False">
                         <EditItemTemplate>
                             <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="True" 

@@ -44,8 +44,23 @@ namespace EticaUNITEC.Faltas
             con.Open();
             try
             {
-                string sql = @"SELECT FaltaId,AlumnoCuenta,AlumnoNombre,AlumnoGenero,CarreraNombre,CategoriaNombre,FaltaTitulo,ArticuloNumero,IncisoLetra,IncisoDescripcion,SancionNombre,FaltaSancionTiempo
-                               FROM InformacionFaltas";
+                string sql = @"SELECT 
+                                FaltaId,AlumnoCuenta,AlumnoNombre,AlumnoGenero,CarreraNombre,
+                                CategoriaNombre,FaltaTitulo,ArticuloNumero,IncisoLetra,IncisoDescripcion,
+                                SancionNombre,FaltaSancionTiempo
+                               FROM Faltas f
+		                        INNER JOIN Alumnos a
+			                        on a.AlumnoId = f.AlumnoId
+		                        INNER JOIN Carreras c
+			                        on c.CarreraId = a.CarreraId
+		                        INNER JOIN Incisos i
+			                        on i.IncisoId = f.IncisoId
+		                        INNER JOIN Categorias categ
+			                        on categ.CategoriaId = f.CategoriaId
+		                        INNER JOIN Sanciones s
+			                        on s.SancionId = f.SancionId
+                                INNER JOIN Articulos arti
+			                        on arti.ArticuloId = i.ArticuloId"; //InformacionFaltas
 
                 SqlCommand cmd = new SqlCommand(sql, con);
                 SqlDataReader reader = cmd.ExecuteReader();

@@ -29,7 +29,7 @@ namespace EticaUNITEC
                 try
                 {
                     CargarCombos(con);
-                    cargarIncisoDescripcion(con);
+                    CargarIncisoDescripcion(con);
                 }
                 catch (Exception ex)
                 {
@@ -142,7 +142,7 @@ namespace EticaUNITEC
                 cmbCategoria.SelectedValue = dtFaltas.Rows[0]["CategoriaId"].ToString();
                 txtDecripcionFalta.Text = dtFaltas.Rows[0]["FaltaDescripcion"].ToString();
 
-                cargarIncisoDescripcion(con);
+                CargarIncisoDescripcion(con);
 
                 string incisoId = dtFaltas.Rows[0]["IncisoId"].ToString();
                 sql = @"SELECT *
@@ -266,14 +266,16 @@ namespace EticaUNITEC
             con.Close();
         }
 
-        void cargarIncisoDescripcion(SqlConnection con)
+        void CargarIncisoDescripcion(SqlConnection con)
         {
 
                 string cat = cmbCategoria.SelectedValue;
-                
+
                 string sql = @"SELECT * 
-                               FROM TiposIncisos 
-                               WHERE CategoriaId ='" + cat + "'";
+	                            FROM Incisos i
+		                            INNER JOIN Articulos a
+	                            on i.ArticuloId = a.ArticuloId 
+                               WHERE CategoriaId ='" + cat + "'"; //TiposIncisos
                 SqlDataAdapter adp = new SqlDataAdapter(sql, con);
                 DataTable dt = new DataTable();
                 //adp.SelectCommand.Transaction = trans;
@@ -283,9 +285,12 @@ namespace EticaUNITEC
                 cmbTipoIncisoDescripcion.DataTextField = "IncisoDescripcion";
                 cmbTipoIncisoDescripcion.DataBind();
 
+            if (dt.Rows.Count > 0)
+            {
                 txtArticuloNumero.Text = dt.Rows[0]["ArticuloNumero"].ToString();
                 txtIncisoLetra.Text = dt.Rows[0]["IncisoLetra"].ToString();
                 txtIncisoDescripcion.Text = dt.Rows[0]["IncisoContenido"].ToString();
+            }
         }
 
         void cargarIncisos()
@@ -298,7 +303,9 @@ namespace EticaUNITEC
             {
                 string inciso = cmbTipoIncisoDescripcion.SelectedValue;
                 string sql = @"SELECT * 
-                               FROM TiposIncisos 
+	                            FROM Incisos i
+		                            INNER JOIN Articulos a
+	                            on i.ArticuloId = a.ArticuloId 
                                WHERE IncisoId ='" + inciso + "'";
                 SqlDataAdapter adp = new SqlDataAdapter(sql, con);
                 DataTable dt = new DataTable();
@@ -334,7 +341,7 @@ namespace EticaUNITEC
             con.Open();
             try
             {
-                cargarIncisoDescripcion(con);
+                CargarIncisoDescripcion(con);
             }
             catch (Exception ex)
             {
@@ -440,9 +447,9 @@ namespace EticaUNITEC
                 cmd.Parameters.Add(new SqlParameter("FaltaSancionTiempo", txtTiempoSancion.Text));
                 cmd.Parameters.Add(new SqlParameter("FaltaSancionDescripcion", txtDescripcionSancion.Text));
                 cmd.Parameters.Add(new SqlParameter("UsuarioId", currentUser.UsuarioID));
-                cmd.Parameters.Add(new SqlParameter("FaltaFecha", Convert.ToDateTime(txtFecha.Text)));
+                cmd.Parameters.Add(new SqlParameter("FaltaFecha", DateTime.Now)); //Convert.ToDateTime(txtFecha.Text)
                 cmd.Parameters.Add(new SqlParameter("FaltaArchivada", faltaArchivada));
-                cmd.Parameters.Add(new SqlParameter("FaltaNumeroActa", txtNumeroActa.Text));
+                cmd.Parameters.Add(new SqlParameter("FaltaNumeroActa", Convert.ToInt32(txtNumeroActa.Text)));
                 cmd.Parameters.Add(new SqlParameter("FaltaTitulo", txtFaltaTitulo.Text));
                 cmd.Parameters.Add(new SqlParameter("FaltaDescripcion", txtDecripcionFalta.Text));
                 cmd.Transaction = trans;
@@ -592,7 +599,7 @@ namespace EticaUNITEC
             con.Open();
             try
             {
-                cargarIncisoDescripcion(con);
+                CargarIncisoDescripcion(con);
             }
             catch (Exception ex)
             {
